@@ -1,0 +1,60 @@
+/* NORMALIZAR EL CSS */ 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    background-image: url('../img/backgroundcolor.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.75);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+li {
+    padding: 10px;
+    margin: 5px 10px;
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+#mostrar {
+        display: none;
+}
+
+/* MAX = DE 0 HASTA ESTE VALOR */ 
+@media (max-width:700px) {
+    #header-main {
+        padding: 10px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #mostrar {
+        display: block;
+        margin-left: 10px;
+    }
+}
